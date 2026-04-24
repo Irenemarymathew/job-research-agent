@@ -49,7 +49,3 @@ The repository has a clean, standard Chrome Extension structure:
 ## Privacy & Security
 
 This extension runs locally in your browser. API requests are made directly from the extension's background script. No personal data is collected or sent to third-party servers aside from the queries made to the necessary APIs.
-
-## License
-
-MIT License
