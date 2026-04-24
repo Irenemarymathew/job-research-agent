@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Job Research Agent",
+  "version": "1.0.0",
+  "description": "AI agent that researches companies and helps you decide whether to apply",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://gnews.io/*",
+    "https://en.wikipedia.org/*",
+    "https://api.adzuna.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["panel.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png"
+    }
+  }
+}
