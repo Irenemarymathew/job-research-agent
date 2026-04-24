@@ -18,6 +18,7 @@ This extension is built with Vanilla JavaScript (Manifest V3) and uses a custom 
 - **Web Search API (GNews/Wikipedia)**: For general company research and recent news.
 - **Adzuna API**: To pull job market data and salary estimates.
 - **LLM Engine**: Powered by Google's Gemini API for reasoning and analysis.
+
 (*This project requires users to enter their own API keys (Gemini, GNews) via the extension UI. No keys are stored in the repository.*)
 
 ### Code Structure
